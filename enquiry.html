@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquiry — FlowMaster Plumbing | Request a Quote</title>
+  <meta name="description" content="Send an enquiry to FlowMaster Plumbing for leak repairs, installations or emergency services. Fill out the form and we'll get back to you.">
+  <meta name="keywords" content="plumbing enquiry, quote request, FlowMaster, contact form">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FlowMaster<br><span class="logo-sub">Plumbing</span></a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="enquiry-form">
+      <h1>Request a Quote</h1>
+      <form id="enquiryForm" novalidate>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" />
+
+        <label for="serviceType">Service Type</label>
+        <select id="serviceType" name="serviceType">
+          <option value="">-- Select Service --</option>
+          <option value="Leak">Leak</option>
+          <option value="Install">Install</option>
+          <option value="Emergency">Emergency</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Details about the job, location, best contact times..."></textarea>
+
+        <button type="submit" class="btn primary">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+27218765432">+27 21 876 5432</a></p>
+        <p>Email: <a href="mailto:info@flowmaster.co.za">info@flowmaster.co.za</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>&copy; 2025 FlowMaster Plumbing</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

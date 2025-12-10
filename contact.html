@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — FlowMaster Plumbing | Get in Touch</title>
+  <meta name="description" content="Contact FlowMaster Plumbing. Find our address, phone number, opening hours and an interactive map to our headquarters in Cape Town.">
+  <meta name="keywords" content="contact, FlowMaster, plumbing contact, map, Cape Town">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Leaflet.js CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-sA+o9A1f8W3sY2kXw6sZ5V3wI4qYB8oYf8g+7v4S0tI=" crossorigin=""/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">FlowMaster<br><span class="logo-sub">Plumbing</span></a>
+      <button id="hamburger" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="contact-grid">
+      <div class="contact-form-col">
+        <h1>Contact Us</h1>
+        <form id="contactForm" novalidate>
+          <label for="cname">Full Name</label>
+          <input type="text" id="cname" name="cname" placeholder="Your full name" />
+
+          <label for="cemail">Email</label>
+          <input type="email" id="cemail" name="cemail" placeholder="you@example.com" />
+
+          <label for="cphone">Phone</label>
+          <input type="tel" id="cphone" name="cphone" placeholder="+27 21 123 4567" />
+
+          <label for="cmessage">Message</label>
+          <textarea id="cmessage" name="cmessage" rows="4" placeholder="How can we help?"></textarea>
+
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info-col">
+        <h2>Our Location</h2>
+        <p>FlowMaster Plumbing HQ<br>15 Harbour Road, Cape Town, 8001</p>
+        <p>Phone: <a href="tel:+27218765432">+27 21 876 5432</a></p>
+        <p>Email: <a href="mailto:info@flowmaster.co.za">info@flowmaster.co.za</a></p>
+        <div id="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>Contact</h4>
+        <p>Phone: <a href="tel:+27218765432">+27 21 876 5432</a></p>
+        <p>Email: <a href="mailto:info@flowmaster.co.za">info@flowmaster.co.za</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>&copy; 2025 FlowMaster Plumbing</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Leaflet.js JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1j7kZZ4mY2tG3b1q3b6wX6bq0aK0r+Qq6VYvE2+g=" crossorigin=""></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
